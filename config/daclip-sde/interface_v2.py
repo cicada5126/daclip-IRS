@@ -172,7 +172,7 @@ def restore(image, degradation_type=None):
     image = restore_image[:, :, [2, 1, 0]]
     # 返回恢复后的图像和输入的退化类型。
 
-    return image, degradation_type
+    return image, da_degradation_type
 
 
 interface = gr.Interface(
