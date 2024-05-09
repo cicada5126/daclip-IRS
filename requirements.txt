@@ -1,0 +1,16 @@
+einops==0.8.0
+ema_pytorch==0.2.3
+ftfy==6.2.0
+gradio==4.29.0
+ipython==8.12.3
+lpips==0.1.4
+matplotlib==3.7.2
+numpy==1.24.4
+opencv_python==4.9.0.80
+regex==2023.8.8
+scipy==1.10.1
+seaborn==0.13.2
+scikit-image==0.21.0
+timm==0.4.12
+tqdm==4.66.1
+transformers==4.39.1
