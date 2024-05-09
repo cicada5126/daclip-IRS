@@ -6,22 +6,21 @@
 > [![Hugging Face](https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/spaces/fffiloni/DA-CLIP) 
 > [![Replicate](https://replicate.com/cjwbw/daclip-uir/badge)](https://replicate.com/cjwbw/daclip-uir) 
 >
-> ![daclip](C:/Users/86136/Desktop/daclip-uir-main/figs/teaser.jpg)
+> ![daclip](figs/teaser.jpg)
 >
 
 ### Updates
 
-[*2024.05.0*8]  update the daclip-IRS code and instructions.
+[*2024.05.0*9]  update the daclip-IRS code and instructions.
 
 ## Introduction to this Project
 
-This project did not adjust the structure of the restoration model of the original project or reselect the data set for training and testing, but modified and improved the interface and functions to complete the undergraduate graduation design.
-The following functional interface code is provided to understand and extend the project:
-detect_clip.py
-detect_daclip.py
-interface_v1.py
-interface_v2.py
-testsingle.py
+The current project has not made any adjustments to the original project's restoration model structure or reselected datasets for training and testing. Instead, it has modified and perfected the interface and functionalities to fulfill the undergraduate graduation project design requirements. The following interface code functionalities are provided for understanding and expanding the project:
+
+- `detect_clip.py` and `detect_daclip.py` are interfaces for degeneration type detection using CLIP and DA-CLIP, respectively. Relevant articles for reference can be found at http://t.csdnimg.cn/U0zLM and http://t.csdnimg.cn/zl2Ei.
+- `interface_v1.py` and `interface_v2.py` are restoration functionalities developed according to the requirements of the undergraduate thesis. They include automatic detection results and manual selection of the desired degeneration type. The manual selection detection approach replaces the Degradation Embedding from Image-controller with Degradation Embedding from Text-encoder. The difference in v2 is that when the manually selected result matches the maximum value of the automatic detection result, the Degradation Embedding from Image-controller is used to achieve the best restoration effect.
+
+- `testsingle.py` provides calculations for PSNR, SSIM, and LPIPS for a single image, referencing `test.py`.
 
 ### Dependencies
 
