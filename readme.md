@@ -35,6 +35,8 @@ Python 3.8 is also acceptable; you can use the requirements from the original pr
 
 This project has only 16 dependencies compared to the original project's 60 dependencies
 
+Gradio uses the version from the project with a few Chinese and css changes, but it needs dependency support so download another one in the environment.
+
 ### Install
 
 If anaconda3 is used I advise you first create a virtual environment with:
